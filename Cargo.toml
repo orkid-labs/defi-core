@@ -1,0 +1,19 @@
+[package]
+name = "defi-core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Generic DeFi core types and error handling for Rust - chain, token, pool, trade types with comprehensive error handling"
+repository = "https://github.com/orkid-labs/defi-core"
+keywords = ["defi", "ethereum", "trading", "types"]
+categories = ["api-bindings", "cryptography::cryptocurrencies"]
+
+[lib]
+name = "defi_core"
+path = "src/lib.rs"
+
+[dependencies]
+alloy-primitives = { version = "1.5", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
